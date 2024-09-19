@@ -16,8 +16,8 @@ export default defineConfig({
       name: 'get-bundle-size',
       closeBundle: async () => {
         const sizeInBytes = (await getFolderSize('./dist')).size;
-        const sizeInKb = sizeInBytes / 1024;
-        console.log(`Bundle Size: ${sizeInKb} KB`);
+        const sizeInKb = (sizeInBytes / 1024).toFixed(2);
+        console.log(`\nLibrary Bundle Size: ${sizeInKb} KB`);
       },
     },
   ],
