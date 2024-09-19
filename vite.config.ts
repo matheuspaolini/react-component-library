@@ -23,7 +23,7 @@ export default defineConfig({
       external: ['react'],
       output: {
         globals: {
-          React: 'React',
+          react: 'React',
         },
       },
     },
