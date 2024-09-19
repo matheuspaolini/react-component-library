@@ -1,0 +1,12 @@
+{
+  "root": [
+    "./src/index.ts",
+    "./src/components/greetings.spec.tsx",
+    "./src/components/greetings.tsx",
+    "./src/components/user-status.spec.tsx",
+    "./src/components/user-status.tsx",
+    "./src/shared/get-formatted-id.spec.ts",
+    "./src/shared/get-formatted-id.ts"
+  ],
+  "version": "5.6.2"
+}
