@@ -4,5 +4,5 @@ export type GreetingsProps = {
 
 export function Greetings(props: GreetingsProps) {
   const { firstName } = props;
-  return <div>Hello, {firstName}</div>;
+  return <div data-testid="greetings-testid">Hello, {firstName}</div>;
 }
