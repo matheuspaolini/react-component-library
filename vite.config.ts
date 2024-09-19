@@ -6,12 +6,20 @@ import { resolve } from 'node:path';
 import react from '@vitejs/plugin-react';
 import dts from 'vite-plugin-dts';
 
+import getFolderSize from 'get-folder-size';
+
 export default defineConfig({
   plugins: [
     react(),
-    dts({
-      rollupTypes: true,
-    }),
+    dts({ rollupTypes: true }),
+    {
+      name: 'get-bundle-size',
+      closeBundle: async () => {
+        const sizeInBytes = (await getFolderSize('./dist')).size;
+        const sizeInKb = sizeInBytes / 1024;
+        console.log(`Bundle Size: ${sizeInKb} KB`);
+      },
+    },
   ],
 
   build: {
