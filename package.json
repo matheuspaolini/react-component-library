@@ -19,7 +19,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "vitest:watch": "vitest --watch"
+    "vitest:watch": "vitest --watch",
+    "vitest:run": "vitest --run"
   },
   "dependencies": {
     "lucide-react": "^0.441.0",
