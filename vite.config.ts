@@ -5,6 +5,7 @@ import { resolve } from 'node:path';
 
 import react from '@vitejs/plugin-react';
 import dts from 'vite-plugin-dts';
+import tailwindcss from 'tailwindcss';
 
 import getFolderSize from 'get-folder-size';
 
@@ -35,8 +36,15 @@ export default defineConfig({
         globals: {
           react: 'React',
           'react-dom': 'ReactDOM',
+          tailwindcss: 'tailwindcss',
         },
       },
+    },
+  },
+
+  css: {
+    postcss: {
+      plugins: [tailwindcss({ config: './tailwind.config.js' })],
     },
   },
 });
