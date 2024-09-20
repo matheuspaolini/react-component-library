@@ -45,8 +45,6 @@ export default defineConfig({
         assetFileNames(chunkInfo) {
           const chunkInfoName = chunkInfo.name;
 
-          console.log({ chunkInfo });
-
           if (!chunkInfoName) {
             throw new Error('Fail to load chunk info name.');
           }
