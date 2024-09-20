@@ -8,7 +8,7 @@ const Switch = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <SwitchPrimitives.Root
     className={cn(
-      'peer inline-flex h-5 w-9 shrink-0 cursor-pointer items-center rounded-full border-2 border-transparent shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=unchecked]:bg-input',
+      'peer rcl-inline-flex rcl-h-5 rcl-w-9 rcl-shrink-0 rcl-cursor-pointer rcl-items-center rcl-rounded-full rcl-border-2 rcl-border-transparent rcl-shadow-sm rcl-transition-colors focus-visible:rcl-outline-none focus-visible:rcl-ring-2 focus-visible:ring-ring focus-visible:rcl-ring-offset-2 focus-visible:rcl-ring-offset-blue-500 disabled:rcl-cursor-not-allowed disabled:rcl-opacity-50 data-[state=checked]:rcl-bg-neutral-200 data-[state=unchecked]:rcl-bg-neutral-500',
       className,
     )}
     {...props}
@@ -16,7 +16,7 @@ const Switch = React.forwardRef<
   >
     <SwitchPrimitives.Thumb
       className={cn(
-        'pointer-events-none block h-4 w-4 rounded-full bg-background shadow-lg ring-0 transition-transform data-[state=checked]:translate-x-4 data-[state=unchecked]:translate-x-0',
+        'rcl-pointer-events-none rcl-block rcl-h-4 rcl-w-4 rcl-rounded-full rcl-bg-blue-500 rcl-shadow-lg rcl-ring-0 rcl-transition-transform data-[state=checked]:rcl-translate-x-4 data-[state=unchecked]:rcl-translate-x-0',
       )}
     />
   </SwitchPrimitives.Root>
