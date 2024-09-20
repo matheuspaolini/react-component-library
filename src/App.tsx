@@ -2,11 +2,8 @@ import { ThemeProvider } from './theme/theme-provider';
 import { Button } from './components/button';
 import { Switch } from './components/switch';
 import './globals.css';
-import { useState } from 'react';
 
 function App() {
-  const [isWebTheme, setIsWebTheme] = useState(false);
-
   return (
     <ThemeProvider>
       <p style={{ color: 'var(--primary-400)' }}>Primary 400</p>
