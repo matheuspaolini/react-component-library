@@ -6,12 +6,14 @@ import { resolve } from 'node:path';
 import react from '@vitejs/plugin-react';
 import dts from 'vite-plugin-dts';
 import tailwindcss from 'tailwindcss';
+import { libInjectCss } from 'vite-plugin-lib-inject-css';
 
 import getFolderSize from 'get-folder-size';
 
 export default defineConfig({
   plugins: [
     react(),
+    libInjectCss(),
     dts({ rollupTypes: true }),
     {
       name: 'get-bundle-size',
@@ -31,12 +33,29 @@ export default defineConfig({
     },
 
     rollupOptions: {
+      treeshake: 'recommended',
       external: ['react', 'react-dom'],
       output: {
         globals: {
           react: 'React',
           'react-dom': 'ReactDOM',
           tailwindcss: 'tailwindcss',
+        },
+
+        assetFileNames(chunkInfo) {
+          const chunkInfoName = chunkInfo.name;
+
+          console.log({ chunkInfo });
+
+          if (!chunkInfoName) {
+            throw new Error('Fail to load chunk info name.');
+          }
+
+          if (chunkInfoName.endsWith('.css')) {
+            return 'theme-styles.css';
+          }
+
+          return chunkInfo.name || '';
         },
       },
     },
