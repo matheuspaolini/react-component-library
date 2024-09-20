@@ -1,10 +1,7 @@
 import { createContext, useContext } from 'react';
 
-type ThemeContextValue = {
-  theme?: 'Light' | 'Dark';
-};
-
-export const ThemeContext = createContext<ThemeContextValue | null>(null);
+// biome-ignore lint/complexity/noBannedTypes: <explanation>
+export const ThemeContext = createContext<{} | null>(null);
 
 export function useThemeContext() {
   const context = useContext(ThemeContext);

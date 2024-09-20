@@ -3,89 +3,38 @@
 @tailwind utilities;
 
 :root {
-  .first-theme {
-    --primary-400: #b91c1c;
-    --primary-300: #dc2626;
-    --primary-200: #ef4444;
-    --primary-100: #fca5a5;
-    --primary-50: #fef2f2;
+  --foreground-900: #1F1F3E;
+  --foreground-800: #353558;
+  --foreground-700: #474772;
+  --foreground-600: #63638F;
+  --foreground-500: #9292BA;
+  --foreground-400: #AEAECE;
+  --foreground-300: #C1C1D9;
+  --foreground-200: #DCDCED;
+  --foreground-100: #F2F2FC;
+  --foreground-50: #FBFBFF;
 
-    --foreground-900: #1F1F3E;
-    --foreground-800: #353558;
-    --foreground-700: #474772;
-    --foreground-600: #63638F;
-    --foreground-500: #9292BA;
-    --foreground-400: #AEAECE;
-    --foreground-300: #C1C1D9;
-    --foreground-200: #DCDCED;
-    --foreground-100: #F2F2FC;
-    --foreground-50: #FBFBFF;
+  --info-400: #0013B7;
+  --info-300: #4657E1;
+  --info-200: #6373FF;
+  --info-100: #E1E5FF;
+  --info-50: #F4F6FF;
 
-    --info-400: #0013B7;
-    --info-300: #4657E1;
-    --info-200: #6373FF;
-    --info-100: #E1E5FF;
-    --info-50: #F4F6FF;
+  --danger-400: #9C1313;
+  --danger-300: #D33030;
+  --danger-200: #E26B6B;
+  --danger-100: #FFE0E0;
+  --danger-50: #FFF6F6;
 
-    --danger-400: #9C1313;
-    --danger-300: #D33030;
-    --danger-200: #E26B6B;
-    --danger-100: #FFE0E0;
-    --danger-50: #FFF6F6;
+  --warning-400: #C78603;
+  --warning-300: #FBA800;
+  --warning-200: #FFC551;
+  --warning-100: #FFF0D1;
+  --warning-50: #FFFBF3;
 
-    --warning-400: #C78603;
-    --warning-300: #FBA800;
-    --warning-200: #FFC551;
-    --warning-100: #FFF0D1;
-    --warning-50: #FFFBF3;
-
-    --success-400: #199652;
-    --success-300: #1CBF66;
-    --success-200: #53DE92;
-    --success-100: #D0FFE5;
-    --success-50: #EFFFF6;
-  }
-
-  .second-theme {
-    --primary-400: #6d28d9;
-    --primary-300: #7c3aed;
-    --primary-200: #a78bfa;
-    --primary-100: #ddd6fe;
-    --primary-50: #f5f3ff;
-
-    --foreground-900: #1F1F3E;
-    --foreground-800: #353558;
-    --foreground-700: #474772;
-    --foreground-600: #63638F;
-    --foreground-500: #9292BA;
-    --foreground-400: #AEAECE;
-    --foreground-300: #C1C1D9;
-    --foreground-200: #DCDCED;
-    --foreground-100: #F2F2FC;
-    --foreground-50: #FBFBFF;
-
-    --info-400: #0013B7;
-    --info-300: #4657E1;
-    --info-200: #6373FF;
-    --info-100: #E1E5FF;
-    --info-50: #F4F6FF;
-
-    --danger-400: #9C1313;
-    --danger-300: #D33030;
-    --danger-200: #E26B6B;
-    --danger-100: #FFE0E0;
-    --danger-50: #FFF6F6;
-
-    --warning-400: #C78603;
-    --warning-300: #FBA800;
-    --warning-200: #FFC551;
-    --warning-100: #FFF0D1;
-    --warning-50: #FFFBF3;
-
-    --success-400: #199652;
-    --success-300: #1CBF66;
-    --success-200: #53DE92;
-    --success-100: #D0FFE5;
-    --success-50: #EFFFF6;
-  }
+  --success-400: #199652;
+  --success-300: #1CBF66;
+  --success-200: #53DE92;
+  --success-100: #D0FFE5;
+  --success-50: #EFFFF6;
 }
